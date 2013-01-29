@@ -1,3 +1,0 @@
-[B]0.5[/B]
-
-- Initial Commit to GIT and first release
