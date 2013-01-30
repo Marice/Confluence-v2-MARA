@@ -1,4 +1,4 @@
-Confluence-v2-MARA v0.1
+Confluence-v2-MARA v0.1.4
 ===========================
 
 Confluencev2 by MadMax Remod
@@ -8,6 +8,9 @@ changes compared to original source:
 * Changed colorscheme of navigation bar in Home / selection menu
 * Fixxed a bug with overlay shadow in home navigation bar
 * Added infopanel at top of homemenu with: CPUtemp, IPadress(only if Wlan/ethernet is up), free-memory, and display of current XBMC buils number.
+* Better image compression / Faster loading! (using .xbt texture format)
+* Select Home menu navigation bar color (only orange and black for now, more to come)
+
 
 
 
