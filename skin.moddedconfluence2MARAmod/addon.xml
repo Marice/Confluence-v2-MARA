@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.moddedconfluence2MARAmod"
-  version="0.1.4"
-  name="Confluence2-MARAmod-v0.1.4"
+  version="0.1.8"
+  name="Confluence2-MARAmod-v0.1.8"
   provider-name="MADMAX !(Team-XBMC) MARAmod">
   <requires>
     <import addon="xbmc.gui" version="4.0.0"/>
@@ -17,10 +17,10 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Confluence-MOD Vol.II by mad-max (MARAmod edition)</summary>
     <summary lang="de">Confluence-MOD Vol.II von mad-max (MARAmod edition)</summary>
-	<description lang="en">My Confluence-MOD came up as alternative for Skins, that were too heavy for ATV2 or ION-systems.[CR]Confluence as base is a fast skin, which became quite handsome because of severeal MODs like CDArt, Clearlogo and many others</description>
+	<description lang="en">Modded by MARA</description>
 	<description lang="de">Der Confluence-MOD entsand als Alternative zu den Skins, welche auf einem ATV2 oder ION-System zu schwerfällig waren.[CR]Confluence als Basis gibt einen schnellen Skin, welcher durch diverse MODs, z.B. CDArt, Clearlogo-Support [CR]und weitere zu einer schönen Augenweide geworden ist</description>    <disclaimer lang="de">Confluence ist der standard Skin für XBMC. Die Deinstallation kann zu unerwünschten Nebeneffekten führen.</disclaimer>
-    <disclaimer lang="en">Confluence is based on the work of Jezz_X and Team XBMC</disclaimer>
-	<disclaimer lang="de">Confluence basiert auf der Arbeit von Jezz_X und Team-XBMC</disclaimer>
+    <disclaimer lang="en">Confluence is based on the work of MadMax and Jezz_X and Team XBMC</disclaimer>
+	<disclaimer lang="de">Confluence basiert auf der Arbeit von MadMaX und Jezz_X und Team-XBMC</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>

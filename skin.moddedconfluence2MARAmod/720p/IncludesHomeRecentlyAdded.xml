@@ -9,7 +9,7 @@
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<control type="group">
-				<posx>715</posx>
+				<posx>360</posx>
 				<posy>50</posy>
 				<visible>Library.HasContent(Movies)</visible>
 				<visible>Container(9000).Hasfocus(10) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
@@ -242,7 +242,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>775</posx>
+				<posx>360</posx>
 				<posy>50</posy>
 				<visible>Library.HasContent(TVShows)</visible>
 				<visible>Container(9000).Hasfocus(11) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
@@ -505,7 +505,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>655</posx>
+				<posx>360</posx>
 				<posy>50</posy>
 				<visible>Library.HasContent(Music)</visible>
 				<visible>Container(9000).Hasfocus(3) + !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</visible>
@@ -777,7 +777,7 @@
 			</control>
 			<!-- Start Documentary Recently Addeds-->
 			<control type="group">
-				<posx>715</posx>
+				<posx>360</posx>
 				<posy>50</posy>
 				<visible>Library.HasContent(Movies) | System.HasAddon(script.randomandlastitems)</visible>
 				<visible>Container(9000).Hasfocus(27) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
@@ -974,7 +974,7 @@
 			<!-- End Documentary Recently Addeds-->
 			<!-- Start Concert Recently Addeds-->
 			<control type="group">
-				<posx>715</posx>
+				<posx>360</posx>
 				<posy>50</posy>
 				<visible>Library.HasContent(Musicvideos)</visible>
 				<visible>Container(9000).Hasfocus(17) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>

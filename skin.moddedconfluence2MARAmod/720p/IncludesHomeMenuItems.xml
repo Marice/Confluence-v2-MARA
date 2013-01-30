@@ -2,7 +2,7 @@
 	<include name="HomeSubMenuVideos">
 		<control type="image" id="90101">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90102">
@@ -41,14 +41,14 @@
 		</control>
 		<control type="image" id="90108">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuHDMovies">
 		<control type="image" id="80161">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="80162">
@@ -71,14 +71,14 @@
 		</control>		
 		<control type="image" id="80168">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>	
 	<include name="HomeSubMenuMovies">
 		<control type="image" id="90161">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90162">
@@ -104,14 +104,14 @@
 		</control>
 		<control type="image" id="90168">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuTVShows">
 		<control type="image" id="90171">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90172">
@@ -126,14 +126,14 @@
 		</control>
 		<control type="image" id="90177">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuMusic">
 		<control type="image" id="90111">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90115">
@@ -173,14 +173,14 @@
 		</control>		
 		<control type="image" id="90121">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuSystem">
 		<control type="image" id="90121">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90122">
@@ -205,14 +205,14 @@
 		</control>
 		<control type="image" id="90126">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuPlayDisc">
 		<control type="image" id="90131">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90132">
@@ -223,14 +223,14 @@
 		</control>
 		<control type="image" id="90126">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuPictures">
 		<control type="image" id="90147">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90148">
@@ -240,14 +240,14 @@
 		</control>
 		<control type="image" id="90149">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuLiveTV">
 		<control type="image" id="90141">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90142">
@@ -280,7 +280,7 @@
 		</control>
 		<control type="image" id="90146">
 			<width>35</width>
-			<height>35</height>
+			<height>70</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>

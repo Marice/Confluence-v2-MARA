@@ -97,12 +97,12 @@
 		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="ButtonHomeSubCommonValues">
-		<height>35</height>
+		<height>70</height>
 		<width>180</width>
 		<textwidth>195</textwidth>
 		<align>center</align>
 		<aligny>center</aligny>
-		<font>font12</font>
+		<font>font16</font>
 		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<texturefocus border="5">HomeSubFO.png</texturefocus>
@@ -113,7 +113,7 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>35</height>
+		<height>70</height>
 		<align>center</align>
 		<onup>9000</onup>
 		<ondown>9002</ondown>

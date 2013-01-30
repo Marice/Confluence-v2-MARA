@@ -1,17 +1,23 @@
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<onload condition="Window.Previous(startup)+Skin.HasSetting(customstartupfocus)">Control.Move(9000,$INFO[Skin.String(CustomFocusOffset)])</onload>
-	<onload condition="!Skin.HasSetting(HomeMenuNoDocuButton)">XBMC.RunScript(script.randomandlastitems,limit=3,method=Last,playlist=special://skin/playlists/Doku.xsp,menu=Menu1)</onload>
-	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
+	<onload condition="Window.Previous(startup)+Skin.HasSetting(customstartupfocus)">Control.Move(9000,$INFO[Skin.String
+
+(CustomFocusOffset)])</onload>
+	<onload condition="!Skin.HasSetting(HomeMenuNoDocuButton)">XBMC.RunScript
+
+(script.randomandlastitems,limit=3,method=Last,playlist=special://skin/playlists/Doku.xsp,menu=Menu1)</onload>
+	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup
+
+(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(2)">ClearProperty(VideosDirectLink)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="image">
 			<posx>0</posx>
-			<posy>90r</posy>
+			<posy>50r</posy>
 			<width>1280</width>
-			<height>90</height>
+			<height>50</height>
 			<texture>floor.png</texture>
 			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
@@ -135,7 +141,9 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>60</posy>
-			<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting
+
+(LowerMenu)">Conditional</animation>
 			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -143,13 +151,17 @@
 				<description>Cd Disc</description>
 				<posx>115</posx>
 				<posy>150</posy>
-				<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+				<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" 
+
+delay="1000">WindowOpen</animation>
 				<animation type="WindowClose">
 					<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
 					<effect type="fade" start="100" end="0" time="1300"/>
 					<condition type="!Player.Playing"/>
 				</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!
+
+Player.Paused">Conditional</animation>
 				<width>180</width>
 				<height>180</height>
 				<posx>0</posx>
@@ -174,13 +186,17 @@
 				<posy>265</posy>
 				<height>25</height>
 				<width>1000</width>
-				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE
+
+[427]:]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting(CdArtHome)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting
+
+(CdArtHome)">Conditional</animation>
 				<animation effect="slide" start="-75" end="0" time="900" tween="cubic" delay="900">WindowOpen</animation>
 			</control>
 			<control type="label">
@@ -195,7 +211,9 @@
 				<font>font13_title</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<animation effect="slide" start="0,0" end="60,0" time="0" condition="Skin.HasSetting(CdArtHome)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="60,0" time="0" condition="Skin.HasSetting
+
+(CdArtHome)">Conditional</animation>
 				<animation effect="slide" start="-60" end="0" time="900" tween="cubic" delay="900">WindowOpen</animation>
 			</control>
 			<control type="label">
@@ -210,7 +228,9 @@
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<animation effect="slide" start="0,0" end="35,0" time="0" condition="Skin.HasSetting(CdArtHome)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="35,0" time="0" condition="Skin.HasSetting
+
+(CdArtHome)">Conditional</animation>
 				<animation effect="slide" start="-35" end="0" time="900" tween="cubic" delay="900">WindowOpen</animation>
 			</control>
 		</control>
@@ -283,7 +303,9 @@
 					<posy>50</posy>
 					<height>25</height>
 					<width>800</width>
-					<label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
+					<label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - [COLOR=blue]
+
+([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
@@ -306,7 +328,9 @@
 					<width>80</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-					<texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NowRecordingChannelIcon]</texture>
+					<texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NowRecordingChannelIcon]
+
+</texture>
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>4</bordersize>
 				</control>
@@ -350,7 +374,9 @@
 					<posy>50</posy>
 					<height>30</height>
 					<width>800</width>
-					<label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
+					<label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=blue]
+
+([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
@@ -362,7 +388,7 @@
 		<!-- Video Info -->
 		<control type="group">
 			<posx>0</posx>
-			<posy>50</posy>
+			<posy>360</posy>
 			<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)</visible>
 			<include>VisibleFadeEffect</include>
@@ -371,11 +397,11 @@
 				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
 				<control type="image">
 					<description>Cover image</description>
-					<posx>20</posx>
-					<posy>45</posy>
+					<posx>200</posx>
+					<posy>90</posy>
 					<width>150</width>
 					<height>300</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<aspectratio aligny="bottem">keep</aspectratio>
 					<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>5</bordersize>
@@ -415,7 +441,7 @@
 					<posy>45</posy>
 					<width>120</width>
 					<height>300</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<aspectratio aligny="bottem">keep</aspectratio>
 					<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>5</bordersize>
@@ -465,10 +491,10 @@
 				<control type="image">
 					<description>Cover image</description>
 					<posx>20</posx>
-					<posy>45</posy>
+					<posy>90</posy>
 					<width>120</width>
 					<height>300</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<aspectratio aligny="">keep</aspectratio>
 					<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>5</bordersize>
@@ -476,7 +502,7 @@
 				<control type="label">
 					<description>Studio label</description>
 					<posx>160</posx>
-					<posy>265</posy>
+					<posy>310</posy>
 					<height>25</height>
 					<width>1000</width>
 					<label>$INFO[VideoPlayer.Studio]</label>
@@ -489,7 +515,7 @@
 				<control type="label">
 					<description>Title label</description>
 					<posx>160</posx>
-					<posy>285</posy>
+					<posy>220</posy>
 					<height>30</height>
 					<width>1000</width>
 					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
@@ -587,8 +613,8 @@
 		</control>
 		<control type="group">
 			<description>Controls for currently playing media</description>
-			<posx>545r</posx>
-			<posy>370</posy>
+			<posx>774</posx>
+			<posy>415</posy>
 			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<animation type="WindowOpen" reversible="false">
@@ -599,34 +625,46 @@
 				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
-			<control type="image">
+			<!-- <control type="image">
 				<description>Background End image</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>35</width>
-				<height>35</height>
+				<width>70</width>
+				<height>100</height>
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
 				<animation effect="slide" start="0,0" end="145,0" time="0" condition="!Skin.HasSetting(ActivateSearch)">Conditional</animation>
 				<visible>Skin.HasSetting(ActivateSearch) | Player.HasMedia</visible>
-			</control>
+			</control> -->
+			
+			
+			<!--   voor later visual control toe te voegen!!
+			
+			<control type="visualisation" id ="3999">
+				<description>visualisation control</description>
+				<posx>80</posx>
+				<posy>60</posy>
+				<width>250</width>
+				<height>200</height>
+				<visible>Player.HasMedia</visible>
+			</control> -->
 			<control type="radiobutton" id="608">
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<description>Global Search</description>
 				<posx>35</posx>
 				<posy>0</posy>
 				<height>35</height>
-				<width>145</width>
+				<width>290</width>
 				<textwidth>150</textwidth>
 				<textoffsetx>10</textoffsetx>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<font>font14</font>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipy="true" border="5">HomeSubFO.png</texturefocus>
 				<texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
-				<pulseonselect>false</pulseonselect>
+				<pulseonselect>true</pulseonselect>
 				<label>137</label>
 				<onclick>RunScript(script.globalsearch)</onclick>
 				<textureradiofocus>icon_search.png</textureradiofocus>
@@ -647,7 +685,7 @@
 					<description>Background image</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>205</width>
+					<width>360</width>
 					<height>35</height>
 					<texture flipy="true" border="0,5,0,0">HomeSubNF.png</texture>
 					<colordiffuse>CCFFFFFF</colordiffuse>
@@ -826,24 +864,26 @@
 			<control type="radiobutton" id="607">
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<description>Go to fullscreen Playback</description>
-				<posx>385</posx>
+				<posx>400</posx>
 				<posy>0</posy>
 				<height>35</height>
-				<width>160</width>
-				<textwidth>150</textwidth>
-				<textoffsetx>10</textoffsetx>
+				<width>110</width>
+				<textwidth>110</textwidth>
+				<textoffsetx>20</textoffsetx>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
-				<texturefocus flipy="true" border="5">HomeSubFO.png</texturefocus>
-				<texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
-				<pulseonselect>false</pulseonselect>
+				<!-- <texturefocus flipy="true" border="5">HomeSubFO.png</texturefocus>
+				<texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus> -->
+				<pulseonselect>true</pulseonselect>
 				<label>31008</label>
 				<onclick>fullscreen</onclick>
+				<!--
 				<textureradiofocus>GoFullscreen.png</textureradiofocus>
 				<textureradionofocus>GoFullscreen.png</textureradionofocus>
+				-->
 				<onleft>606</onleft>
 				<onright>608</onright>
 				<onup>9003</onup>
@@ -852,7 +892,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<posy>400</posy>
+			<posy>450</posy>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
 				<effect type="fade" start="0" end="100" time="300" />
@@ -863,10 +903,10 @@
 			</animation>
 			<control type="group" id="9001">
 				<posx>0</posx>
-				<posy>70</posy>
+				<posy>100</posy> <!-- position of submenu -->
 				<onup>9000</onup>
 				<ondown>9002</ondown>
-				<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,400" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 				<control type="grouplist" id="9010">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9010</onleft>
@@ -964,14 +1004,14 @@
 					<!-- Buttons for the grouplist -->
 					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
 					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
-					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus +Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>				
 			</control>
 			<control type="image">
 				<posx>-100</posx>
 				<posy>0</posy>
 				<width>1480</width>
-				<height>75</height>
+				<height>102</height>
 				<texture border="0,6,0,6">HomeBack.png</texture>
 				<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			</control>
@@ -1052,7 +1092,7 @@
 				<posx>-110</posx>
 				<posy>5</posy>
 				<width>1500</width>
-				<height>60</height>
+				<height>102</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup condition="!Player.HasMedia">9003</onup>
@@ -1060,30 +1100,30 @@
 				<onup condition="Player.HasMedia">603</onup>
 				<ondown>9001</ondown>
 				<pagecontrol>-</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>350</scrolltime>
 				<focusposition>2</focusposition>
 				<movement>1</movement>
 				<orientation>Horizontal</orientation>
-				<itemlayout height="60" width="300">
-					<control type="image">
+				<itemlayout height="96" width="300">
+					<!--<control type="image">
 						<posx>0</posx>
-						<posy>4</posy>
+						<posy>25</posy>
 						<width>1</width>
-						<height>52</height>
+						<height>50</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
 						<posx>299</posx>
-						<posy>4</posy>
+						<posy>25</posy>
 						<width>1</width>
-						<height>52</height>
+						<height>50</height>
 						<texture>HomeSeperator.png</texture>
-					</control>
+					</control> -->
 					<control type="label">
 						<posx>150</posx>
 						<posy>0</posy>
 						<width>290</width>
-						<height>60</height>
+						<height>102</height>
 						<font>font_MainMenu</font>
 						<textcolor>grey3</textcolor>
 						<align>center</align>
@@ -1091,26 +1131,26 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="60" width="300">
+				<focusedlayout height="96" width="300">
 					<control type="image">
 						<posx>0</posx>
-						<posy>4</posy>
+						<posy>25</posy>
 						<width>1</width>
-						<height>52</height>
+						<height>50</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
 						<posx>299</posx>
-						<posy>4</posy>
+						<posy>25</posy>
 						<width>1</width>
-						<height>52</height>
+						<height>50</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="label">
 						<posx>150</posx>
 						<posy>0</posy>
 						<width>290</width>
-						<height>60</height>
+						<height>102</height>
 						<font>font_MainMenu</font>
 						<textcolor>grey3</textcolor>
 						<align>center</align>
@@ -1121,7 +1161,7 @@
 						<posx>150</posx>
 						<posy>0</posy>
 						<width>290</width>
-						<height>60</height>
+						<height>102</height>
 						<font>font_MainMenu</font>
 						<textcolor>white</textcolor>
 						<align>center</align>
@@ -1208,8 +1248,12 @@
 					</item>
 					<item id="2">
 						<label>3</label>
-						<onclick condition="StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos)</onclick>
-						<onclick condition="!StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
+						<onclick condition="StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow
+
+(Videos)</onclick>
+						<onclick condition="!StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow
+
+(Videos,root)</onclick>
 						<icon>special://skin/backgrounds/videos.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
@@ -1261,7 +1305,9 @@
 					</item>
 					<item id="1">
 						<label>0</label>
-						<onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+						<onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)
+
+</onclick>
 						<onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
 						<icon>special://skin/backgrounds/programs.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
@@ -1287,17 +1333,21 @@
 				<posx>0</posx>
 				<posy>6</posy>
 				<width>128</width>
-				<height>64</height>
+				<height>102</height>
 				<texture>SideFade.png</texture>
-				<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting
+
+(LowerMenu)">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>128r</posx>
 				<posy>6</posy>
 				<width>128</width>
-				<height>64</height>
+				<height>102</height>
 				<texture flipx="true">SideFade.png</texture>
-				<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting
+
+(LowerMenu)">Conditional</animation>
 			</control>
 		</control>
 		<control type="group" id="9002">
@@ -1479,7 +1529,9 @@
 			<shadowcolor>black</shadowcolor>
 			<label>$INFO[System.Date]</label>
 			<include>Window_OpenClose_Animation</include>
-			<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible(Mutebug)">conditional</animation>
+			<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible
+
+(Mutebug)">conditional</animation>
 		</control>
 	</controls>
 </window>

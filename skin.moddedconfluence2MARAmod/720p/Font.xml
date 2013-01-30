@@ -182,7 +182,7 @@
 	 	<font>
 			<name>font_MainMenu</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>40</size>
+			<size>45</size>
 		</font>
 	 	<font>
 			<name>WeatherTemp</name>
